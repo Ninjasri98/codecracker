@@ -1,22 +1,18 @@
-import { useState,useEffect } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/Navbar';
+import Dashboard from './components/Dashboard';
+import Profile from './components/Profile';
 
 function App() {
-  const [msg, setMsg] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:5000/api/ping')
-      .then(res => res.json())
-      .then(data => setMsg(data.message))
-      .catch(err => setMsg("API call failed"));
-  }, []);
-
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Code Cracker</h1>
-      <p>{msg}</p>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
