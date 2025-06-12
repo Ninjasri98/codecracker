@@ -1,0 +1,13 @@
+{
+  "platform": "leetcode",
+  "username": "john_doe",
+  "rating": null,
+  "maxRating": null,
+  "rank": 24897,
+  "solved": {
+    "total": 600,
+    "easy": 150,
+    "medium": 300,
+    "hard": 150
+  }
+}

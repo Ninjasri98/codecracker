@@ -1,0 +1,17 @@
+{
+  "platform": "codeforces",
+  "username": "tourist",
+  "rating": 3850,
+  "maxRating": 3900,
+  "rank": "legendary grandmaster",
+  "solved": {
+    "total": 1200,
+    "easy": 300,
+    "medium": 600,
+    "hard": 300
+  },
+  "ratingHistory": [
+    { "contest": "Div2 Round 789", "rating": 3400, "date": "2023-06-01" },
+    { "contest": "Div2 Round 800", "rating": 3500, "date": "2023-07-01" }
+  ]
+}
